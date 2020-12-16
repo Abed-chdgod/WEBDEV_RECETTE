@@ -1,3 +1,4 @@
+/* STYLE POUR TELEPHONE */
 *
 {
     overflow: auto;
@@ -12,13 +13,10 @@ body
 div.contenue
 {
     background-color: #fff;
-    margin:0 10% 80px 10%;
-    padding:0 30px 30px 30px;
-    min-width: 330px;
-    margin-top: 60px;
+    margin:40px 8px 40px 8px;
+    padding:8px 08px 20px 08px;
     box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.1);
-    overflow: visible;
-   
+    overflow: visible; 
 }
 h1{
     text-align: center;
@@ -69,15 +67,15 @@ table.info
     bottom:0;
     background-color:#6C829DC0;
     color:#fff;
-    height:80px;
+    height:50px;
 }
 table.info td{
-            font-size:14px;
+            font-size:12px;
             vertical-align: top;
 }
 table.info th
 {
-    font-size: 16px;
+    font-size: 14px;
     vertical-align: top;
 }
 img.info
@@ -90,7 +88,7 @@ img.info
 }
 div.colonne
 {
-    width: 45%;
+    width: 100%;
     margin-top: 20px;
 }
 div.colonne h2 
@@ -105,11 +103,10 @@ div.colonne1
 {
 
     display:inline-block;
-    margin-right:10px;
 }
 div.colonne2
 {
-float: right;
+
 }
 div.ingredients
 {
@@ -137,7 +134,7 @@ table.preparation p.numero
 }
 table.preparation td
 {
-    vertical-align: top;
+    vertical-align: center;
 }
 table.preparation td.preparation_etape{
     padding-left: 10px;
@@ -146,4 +143,54 @@ table.preparation td.preparation_etape{
 }
 table.preparation tr{
     height:40px ;
+}
+
+/* STYLE POUR ORDINATEUR  */
+
+@media only screen and (min-width:768px){
+
+    div.contenue
+    {
+        margin:60px 10% 80px 10%;
+        padding:0px 30px 30px 30px;
+        min-width: 330px;
+    }
+    table.info
+{
+
+    height:80px;
+}
+table.info td{
+            font-size:14px;
+ 
+}
+table.info th
+{
+    font-size: 16px;
+ 
+}
+
+div.colonne
+{
+    width: 45%;
+}
+
+div.colonne1
+{
+    margin-right:10px;
+}
+div.colonne2
+{
+float: right;
+}
+}
+@media only screen and (min-width:900px)
+{
+    div.contenue
+    {
+        
+        margin-left:auto;
+        margin-right:auto;
+        max-width: 644px;
+    }
 }
